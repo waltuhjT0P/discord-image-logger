@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-WEBHOOK_URL = os.getenv(https://discord.com/api/webhooks/1378852791472099378/q-M2hWV-VFO_iEXvvKlT_vIODq03J2MuoE1usmCMiKC7sZgHT5k_jCBpOUgs3kO-YURD'')  # Put in Render environment
+WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")  # Put in Render environment
 
 def get_client_ip(req):
     if req.headers.get('X-Forwarded-For'):
